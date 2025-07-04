@@ -42,6 +42,12 @@ body {
   border-color: var(--craft-accent);
 }
 
+.placeholder-craft::placeholder {
+  color: var(--craft-accent);
+  opacity: 0.5;
+}
+
+
 
 input:-webkit-autofill {
   box-shadow: 0 0 0px 1000px white inset !important;

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Playfair_Display } from 'next/font/google';
+import RedirectOnLoad from "./components/RedirectOnLoad";
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={playfair.variable}>
       <body>
+        <RedirectOnLoad />
         {children}
       </body>
     </html>
