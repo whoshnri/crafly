@@ -1,13 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { FaGithub, FaInstagram, FaXTwitter, FaMoon, FaSun } from "react-icons/fa6";
+import { useState } from "react";
+import { FaGithub,FaXTwitter, FaMoon, FaSun } from "react-icons/fa6";
 
 const CircleProgress = ({ progress = 0 , dark}: { progress: number, dark:boolean }) => {
   const radius = 42;
   const circumference = 2 * Math.PI * radius;
-
-  // Correct offset calculation based on progress (0–100%)
   const offset = circumference - (progress / 100) * circumference;
 
   return (
@@ -59,7 +57,7 @@ export default function CraftlyLanding() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [dark, setDark] = useState(false);
-  const [progress, setProgress] = useState(1);
+  const progress = 3;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -119,10 +117,10 @@ export default function CraftlyLanding() {
       <main className="max-w-3xl mx-auto px-6 text-center">
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl mb-8 leading-relaxed font-medium" style={{ fontFamily: 'Playfair Display, serif' }}>
-            "Creativity deserves a storefront."
+            &quot;Creativity deserves a storefront.&quot;
           </h2>
           <p className="text-lg md:text-xl opacity-80 leading-relaxed max-w-2xl mx-auto mb-12 font-light">
-            We're crafting a beautiful marketplace where artisans and creators can showcase their handmade treasures.
+            We&apos;re crafting a beautiful marketplace where artisans and creators can showcase their handmade treasures.
           </p>
         </div>
 
@@ -159,7 +157,7 @@ export default function CraftlyLanding() {
               </button>
             </div>
             {isSubmitted && (
-              <p className="opacity-70 text-sm">Thank you! We'll notify you when Craftly launches.</p>
+              <p className="opacity-70 text-sm">Thank you! We&apos;ll notify you when Craftly launches.</p>
             )}
           </form>
         </div>

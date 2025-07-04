@@ -25,7 +25,13 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(result, { status: response.status });
-  } catch (err) {
-    return NextResponse.json({ status: "error", message: err.message }, { status: 500 });
+  } catch (err: unknown) {
+  let message = "Something went wrong";
+  if (err instanceof Error) {
+    message = err.message;
   }
+
+  return NextResponse.json({ status: "error", message }, { status: 500 });
+}
+
 }

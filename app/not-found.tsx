@@ -23,7 +23,7 @@ export default function NotFound() {
           Oops! Page not found.
         </p>
         <p className="text-lg mt-2 opacity-70 font-light">
-          The page you're looking for doesn’t exist or has been moved.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <Link
           href="/prelaunch"
