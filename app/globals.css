@@ -2,26 +2,55 @@
 @plugin "daisyui";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --craft-bg: #fff8f2;
+  --craft-text: #613217;
+  --craft-accent: #ad826a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --craft-bg: #1a1410;
+  --craft-text: #fcfaf7;
+  --craft-accent: #cfbfb0;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--craft-bg);
+  color: var(--craft-text);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Utility classes */
+.craft-bg {
+  background-color: var(--craft-bg);
+}
+
+.craft-text {
+  color: var(--craft-text);
+}
+
+.craft-accent {
+  color: var(--craft-accent);
+}
+
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.border-craft {
+  border-color: var(--craft-accent);
+}
+
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--craft-bg) inset !important;
+  -webkit-text-fill-color: #8F6D5A !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.dark input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px var(--craft-bg) inset !important;
+  -webkit-text-fill-color: #f3ede8 !important;
 }
