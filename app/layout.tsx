@@ -11,20 +11,20 @@ const playfair = Playfair_Display({
 
 
 export const metadata: Metadata = {
-  title: "Craftly is coming!",
-  description: "Craftly is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
-  keywords: ["Craftly", "creator marketplace", "handmade store", "launch soon", "ecommerce for artisans"],
+  title: "Craelo is coming!",
+  description: "Craelo is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
+  keywords: ["Craelo", "creator marketplace", "handmade store", "launch soon", "ecommerce for artisans"],
   openGraph: {
-    title: "Craftly is coming!",
-    description: "Craftly is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
-    url: "https://app-craftly.vercel.app.com", // replace with your actual domain
-    siteName: "Craftly",
+    title: "Craelo is coming!",
+    description: "Craelo is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
+    url: "https://app-craelo.vercel.app.com", // replace with your actual domain
+    siteName: "Craelo",
     images: [
       {
-        url: "https://app-craftly.vercel.app.com/og-image.png",
+        url: "https://app-craelo.vercel.app.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Craftly Coming Soon",
+        alt: "Craelo Coming Soon",
       },
     ],
     locale: "en_US",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Craftly is coming!",
-    description: "Craftly is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
-    images: ["https://app-craftly.vercel.app.com/og-image.png"], // replace
+    title: "Craelo is coming!",
+    description: "Craelo is a curated storefront for creators, makers, and artisans. Join our launch waitlist.",
+    images: ["https://app-craelo.vercel.app.com/og-image.png"], // replace
   },
 };
 
