@@ -94,7 +94,7 @@ export default function CraftlyLanding() {
               <span className="text-lg font-semibold">{progress}%</span>
             </div>
           </div>
-          <p className="text-sm opacity-70 font-medium tracking-wide">Building Craftly...</p>
+          <p className="text-sm opacity-70 font-medium tracking-wide">Building Craelo...</p>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ export default function CraftlyLanding() {
 
       <header className="text-center py-8">
         <h1 className="text-5xl md:text-6xl tracking-tight font-medium" style={{ fontFamily: 'Playfair Display, serif' }}>
-          Craftly
+          Craelo 
         </h1>
       </header>
 
@@ -157,7 +157,7 @@ export default function CraftlyLanding() {
               </button>
             </div>
             {isSubmitted && (
-              <p className="opacity-70 text-sm">Thank you! We&apos;ll notify you when Craftly launches.</p>
+              <p className="opacity-70 text-sm">Thank you! We&apos;ll keep you posted.</p>
             )}
           </form>
         </div>
@@ -176,7 +176,7 @@ export default function CraftlyLanding() {
       </main>
 
       <footer className="text-center py-12 border-t border-[#8F6D5A] border-opacity-10">
-        <p className="text-sm opacity-90">© 2025 Craftly. Crafted with love.</p>
+        <p className="text-sm opacity-90">© 2025 Craelo. Crafted with love.</p>
       </footer>
     </div>
   );
