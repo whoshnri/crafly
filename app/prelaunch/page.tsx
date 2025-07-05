@@ -165,7 +165,7 @@ export default function CraftlyLanding() {
         <div className="mb-16">
           <p className="text-sm opacity-80 mb-3">Follow our journey</p>
           <div className="flex justify-center gap-6">
-            <a href="https://x.com/whoshnri" target="blank" className="w-12 h-12 rounded-full bg-opacity-10 flex items-center justify-center">
+            <a href="https://x.com/xyz_07hb" target="blank" className="w-12 h-12 rounded-full bg-opacity-10 flex items-center justify-center">
               <FaXTwitter className="w-6 h-6" />
             </a>
             <a href="https://github.com/whoshnri/craftly" target="blank" className="w-12 h-12 rounded-full bg-opacity-10 flex items-center justify-center">
